@@ -16,13 +16,16 @@ else
 	require SYSPATH.'classes/Kohana'.EXT;
 }
 
+// load application config
+$application_config = require APPPATH . 'config' . DIRECTORY_SEPARATOR . 'application.php';
+
 /**
  * Set the default time zone.
  *
  * @link http://kohanaframework.org/guide/using.configuration
  * @link http://www.php.net/manual/timezones
  */
-date_default_timezone_set('America/Chicago');
+date_default_timezone_set( $application_config[ 'timezone' ] );
 
 /**
  * Set the default locale.
@@ -30,7 +33,7 @@ date_default_timezone_set('America/Chicago');
  * @link http://kohanaframework.org/guide/using.configuration
  * @link http://www.php.net/manual/function.setlocale
  */
-setlocale(LC_ALL, 'en_US.utf-8');
+setlocale(LC_ALL, $application_config[ 'locale' ] );
 
 /**
  * Enable the Kohana auto-loader.
@@ -61,7 +64,7 @@ ini_set('unserialize_callback_func', 'spl_autoload_call');
 /**
  * Set the default language
  */
-I18n::lang('en-us');
+I18n::lang( $application_config[ 'language' ] );
 
 /**
  * Set Kohana::$environment if a 'KOHANA_ENV' environment variable has been supplied.
