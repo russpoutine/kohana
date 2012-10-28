@@ -1,3 +1,9 @@
 [submodule "source/system"]
 	path = source/system
 	url = https://github.com/kohana/core
+[submodule "source/modules/kohana/minion"]
+	path = source/modules/kohana/minion
+	url = git://github.com/kohana/minion.git
+[submodule "source/modules/russpoutine/kohana-propel"]
+	path = source/modules/russpoutine/kohana-propel
+	url = git://github.com/russpoutine/kohana-propel.git
