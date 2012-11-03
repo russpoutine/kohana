@@ -1,6 +1,6 @@
 <?php
 
-$source_root = realpath( './..' );
+$source_root = realpath( dirname(__FILE__) . '/..' );
 
 
 /**
