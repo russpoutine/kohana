@@ -10,3 +10,6 @@
 [submodule "source/modules/russpoutine/kohana-object-action"]
 	path = source/modules/russpoutine/kohana-object-action
 	url = git://github.com/russpoutine/kohana-object-action.git
+[submodule "source/modules/russpoutine/kohana-elastica"]
+	path = source/modules/russpoutine/kohana-elastica
+	url = git://github.com/russpoutine/kohana-elastica.git
