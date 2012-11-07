@@ -13,5 +13,7 @@ return array(
 		// 'orm'        => MODPATH.'orm',        // Object Relationship Mapping
 		// 'unittest'   => MODPATH.'unittest',   // Unit testing
 		// 'userguide'  => MODPATH.'userguide',  // User guide and API documentation
-		'propel' => MODPATH . 'russpoutine/kohana-propel'
+		'propel' => MODPATH . 'russpoutine/kohana-propel',
+		'object-action' => MODPATH . 'russpoutine/kohana-object-action',
+		//'elastica' => MODPATH . 'russpoutine/kohana-elastica',
 );
